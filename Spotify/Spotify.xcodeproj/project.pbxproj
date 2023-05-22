@@ -19,6 +19,8 @@
 		41A68A242A1B3550002E3590 /* LibraryViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */; };
 		41A68A262A1B3560002E3590 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A252A1B3560002E3590 /* SearchViewController.swift */; };
 		41A68A2A2A1B39A3002E3590 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A292A1B39A3002E3590 /* HomeViewController.swift */; };
+		41A68A312A1B3B91002E3590 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A302A1B3B91002E3590 /* AuthManager.swift */; };
+		41A68A342A1B3CBF002E3590 /* WelcomeViewController().swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A332A1B3CBF002E3590 /* WelcomeViewController().swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewcontroller.swift; sourceTree = "<group>"; };
 		41A68A252A1B3560002E3590 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		41A68A292A1B39A3002E3590 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41A68A302A1B3B91002E3590 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		41A68A332A1B3CBF002E3590 /* WelcomeViewController().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeViewController().swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +109,11 @@
 		41A689F02A1B342C002E3590 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				41A689F12A1B342C002E3590 /* AppDelegate.swift */,
-				41A689F32A1B342C002E3590 /* SceneDelegate.swift */,
-				41A68A212A1B3539002E3590 /* TabbarController.swift */,
-				41A68A292A1B39A3002E3590 /* HomeViewController.swift */,
-				41A68A252A1B3560002E3590 /* SearchViewController.swift */,
-				41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */,
+				41A68A2D2A1B3B3F002E3590 /* Resources */,
+				41A68A2B2A1B3B15002E3590 /* Viewcontrollers */,
+				41A68A2F2A1B3B6B002E3590 /* Models */,
+				41A68A2E2A1B3B5F002E3590 /* Managers */,
 				41A689F72A1B342C002E3590 /* Main.storyboard */,
-				41A689FA2A1B342F002E3590 /* Assets.xcassets */,
 				41A689FC2A1B342F002E3590 /* LaunchScreen.storyboard */,
 				41A689FF2A1B342F002E3590 /* Info.plist */,
 			);
@@ -134,6 +135,59 @@
 				41A68A142A1B342F002E3590 /* SpotifyUITestsLaunchTests.swift */,
 			);
 			path = SpotifyUITests;
+			sourceTree = "<group>";
+		};
+		41A68A2B2A1B3B15002E3590 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				41A68A2C2A1B3B25002E3590 /* MainViewControllers */,
+				41A68A322A1B3C96002E3590 /* Otherviewcontrollers */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		41A68A2C2A1B3B25002E3590 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41A68A212A1B3539002E3590 /* TabbarController.swift */,
+				41A68A292A1B39A3002E3590 /* HomeViewController.swift */,
+				41A68A252A1B3560002E3590 /* SearchViewController.swift */,
+				41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		41A68A2D2A1B3B3F002E3590 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41A689F12A1B342C002E3590 /* AppDelegate.swift */,
+				41A689F32A1B342C002E3590 /* SceneDelegate.swift */,
+				41A689FA2A1B342F002E3590 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41A68A2E2A1B3B5F002E3590 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41A68A302A1B3B91002E3590 /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		41A68A2F2A1B3B6B002E3590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41A68A322A1B3C96002E3590 /* Otherviewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				41A68A332A1B3CBF002E3590 /* WelcomeViewController().swift */,
+			);
+			path = Otherviewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A68A262A1B3560002E3590 /* SearchViewController.swift in Sources */,
+				41A68A312A1B3B91002E3590 /* AuthManager.swift in Sources */,
 				41A68A242A1B3550002E3590 /* LibraryViewcontroller.swift in Sources */,
 				41A68A222A1B3539002E3590 /* TabbarController.swift in Sources */,
+				41A68A342A1B3CBF002E3590 /* WelcomeViewController().swift in Sources */,
 				41A689F22A1B342C002E3590 /* AppDelegate.swift in Sources */,
 				41A689F42A1B342C002E3590 /* SceneDelegate.swift in Sources */,
 				41A68A2A2A1B39A3002E3590 /* HomeViewController.swift in Sources */,

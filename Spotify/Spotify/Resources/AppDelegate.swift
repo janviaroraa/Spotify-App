@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         window.rootViewController = TabbarController()
         
+        if AuthManager.shared.isSignedIn {
+            window.rootViewController = TabbarController()
+        } else {
+            window.rootViewController = UINavigationController(rootViewController: WelcomeViewController())
+        }
+        
         self.window = window
         
         return true
