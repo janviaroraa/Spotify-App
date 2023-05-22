@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		41A689F22A1B342C002E3590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A689F12A1B342C002E3590 /* AppDelegate.swift */; };
 		41A689F42A1B342C002E3590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A689F32A1B342C002E3590 /* SceneDelegate.swift */; };
-		41A689F62A1B342C002E3590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A689F52A1B342C002E3590 /* ViewController.swift */; };
 		41A689F92A1B342C002E3590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A689F72A1B342C002E3590 /* Main.storyboard */; };
 		41A689FB2A1B342F002E3590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A689FA2A1B342F002E3590 /* Assets.xcassets */; };
 		41A689FE2A1B342F002E3590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A689FC2A1B342F002E3590 /* LaunchScreen.storyboard */; };
 		41A68A092A1B342F002E3590 /* SpotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A082A1B342F002E3590 /* SpotifyTests.swift */; };
 		41A68A132A1B342F002E3590 /* SpotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A122A1B342F002E3590 /* SpotifyUITests.swift */; };
 		41A68A152A1B342F002E3590 /* SpotifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A142A1B342F002E3590 /* SpotifyUITestsLaunchTests.swift */; };
+		41A68A222A1B3539002E3590 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A212A1B3539002E3590 /* TabbarController.swift */; };
+		41A68A242A1B3550002E3590 /* LibraryViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */; };
+		41A68A262A1B3560002E3590 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A252A1B3560002E3590 /* SearchViewController.swift */; };
+		41A68A2A2A1B39A3002E3590 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A68A292A1B39A3002E3590 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		41A689EE2A1B342C002E3590 /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A689F12A1B342C002E3590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A689F32A1B342C002E3590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41A689F52A1B342C002E3590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41A689F82A1B342C002E3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A689FA2A1B342F002E3590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A689FD2A1B342F002E3590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		41A68A0E2A1B342F002E3590 /* SpotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A68A122A1B342F002E3590 /* SpotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyUITests.swift; sourceTree = "<group>"; };
 		41A68A142A1B342F002E3590 /* SpotifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41A68A212A1B3539002E3590 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewcontroller.swift; sourceTree = "<group>"; };
+		41A68A252A1B3560002E3590 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		41A68A292A1B39A3002E3590 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				41A689F12A1B342C002E3590 /* AppDelegate.swift */,
 				41A689F32A1B342C002E3590 /* SceneDelegate.swift */,
-				41A689F52A1B342C002E3590 /* ViewController.swift */,
+				41A68A212A1B3539002E3590 /* TabbarController.swift */,
+				41A68A292A1B39A3002E3590 /* HomeViewController.swift */,
+				41A68A252A1B3560002E3590 /* SearchViewController.swift */,
+				41A68A232A1B3550002E3590 /* LibraryViewcontroller.swift */,
 				41A689F72A1B342C002E3590 /* Main.storyboard */,
 				41A689FA2A1B342F002E3590 /* Assets.xcassets */,
 				41A689FC2A1B342F002E3590 /* LaunchScreen.storyboard */,
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A689F62A1B342C002E3590 /* ViewController.swift in Sources */,
+				41A68A262A1B3560002E3590 /* SearchViewController.swift in Sources */,
+				41A68A242A1B3550002E3590 /* LibraryViewcontroller.swift in Sources */,
+				41A68A222A1B3539002E3590 /* TabbarController.swift in Sources */,
 				41A689F22A1B342C002E3590 /* AppDelegate.swift in Sources */,
 				41A689F42A1B342C002E3590 /* SceneDelegate.swift in Sources */,
+				41A68A2A2A1B39A3002E3590 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
